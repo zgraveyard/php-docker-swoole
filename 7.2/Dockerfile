@@ -11,7 +11,7 @@ LABEL Maintainer="Zaher Ghaibeh <z@zah.me>" \
       org.label-schema.description="Lightweight php 7.2 container based on alpine with Composer installed and swoole pecl installed." \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version="1.2.3" \
-      org.label-schema.vcs-url="https://github.com/linuxjuggler/php72-swoole.git" \
+      org.label-schema.vcs-url="https://github.com/linuxjuggler/php-docker-swoole.git" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.docker.schema-version="1.0"
 
