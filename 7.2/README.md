@@ -1,15 +1,19 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/zaherg/php-swoole.svg)](https://hub.docker.com/r/zaherg/php-swoole/) [![](https://images.microbadger.com/badges/image/zaherg/php-swoole.svg)](https://microbadger.com/images/zaherg/php-swoole "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/zaherg/php-swoole.svg)](https://microbadger.com/images/zaherg/php-swoole "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/zaherg/php-swoole.svg)](https://microbadger.com/images/zaherg/php-swoole "Get your own commit badge on microbadger.com")  [![](https://img.shields.io/github/last-commit/linuxjuggler/php-docker-swoole.svg)](https://github.com/linuxjuggler/php-docker-swoole)
 
-## Image description
+# PHP Docker Swoole
 
-This image contain PHP 7.2 based on alpine with MySQL, PostgreSQL, Redis, GD, [Swoole](https://www.swoole.co.uk/#get-started) enabled and Composer already installed
+This should contain all the images that I'll try to build and push to docker.
+
+## Images description
+
+Those images contain PHP 7.x based on alpine with MySQL, PostgreSQL, Redis, GD, [Swoole](https://www.swoole.co.uk/#get-started) enabled and Composer already installed
 
 ## Runing the image:
 
 Then run the docker and specify the env file that you have created like this
 
 ```
-docker run --env-file .env zaherg/php-swoole:7.2
+docker run --env-file .env zaherg/php-swoole:<version>
 ```
 
 ## .env.example
@@ -72,25 +76,4 @@ It has the following modules:
 1. xmlreader  
 1. xmlwriter  
 1. zip  
-1. zlib 
-
-## GD information
-
-```
-GD Support => enabled
-GD Version => bundled (2.1.0 compatible)
-FreeType Support => enabled
-FreeType Linkage => with freetype
-FreeType Version => 2.8.1
-GIF Read Support => enabled
-GIF Create Support => enabled
-JPEG Support => enabled
-libJPEG Version => 8
-PNG Support => enabled
-libPNG Version => 1.6.34
-WBMP Support => enabled
-XBM Support => enabled
-
-Directive => Local Value => Master Value
-gd.jpeg_ignore_warning => 1 => 1
-```
+1. zlib
